@@ -1,0 +1,1059 @@
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+    color: #172033;
+}
+
+
+/* Navigation */
+.navbar {
+    height: 75px;
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #101827;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+    color: white;
+}
+
+.logo span,
+footer span {
+    color: #a3e635;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #d1d5db;
+    font-size: 15px;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+    color: #a3e635;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-buttons a {
+    text-decoration: none;
+    padding: 11px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.login-btn {
+    color: white;
+    border: 1px solid #64748b;
+}
+
+.register-btn {
+    background: #a3e635;
+    color: #101827;
+    font-weight: bold;
+}
+
+
+/* Hero Section */
+.hero {
+    min-height: 470px;
+    padding: 100px 8%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(
+        90deg,
+        #101827 0%,
+        #1e293b 65%,
+        #334155 100%
+    );
+    color: white;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.tagline {
+    color: #a3e635;
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #a3e635;
+}
+
+.hero-description {
+    color: #cbd5e1;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.explore-btn {
+    display: inline-block;
+    padding: 14px 25px;
+    background: #a3e635;
+    color: #101827;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+
+/* Section Headings */
+.sports,
+.arenas {
+    padding: 75px 8%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-heading p {
+    color: #65a30d;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.section-heading h2 {
+    font-size: 32px;
+    color: #101827;
+}
+
+
+/* Sports Cards */
+.sports-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.sport-card {
+    padding: 30px 15px;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px #0000000d;
+    transition: 0.3s;
+}
+
+.sport-card:hover {
+    transform: translateY(-6px);
+}
+
+.sport-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.sport-card h3 {
+    font-size: 17px;
+}
+
+
+/* Arena Cards */
+.arenas {
+    background: #f1f5f9;
+}
+
+.arena-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.arena-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px #0000000d;
+    transition: 0.3s;
+}
+
+.arena-card:hover {
+    transform: translateY(-5px);
+}
+
+.arena-image {
+    height: 190px;
+    background-size: cover;
+    background-position: center;
+}
+
+.badminton {
+    background-image: url(
+        'https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=700'
+    );
+}
+
+.football {
+    background-image: url(
+        'https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=700'
+    );
+}
+
+.cricket {
+    background-image: url(
+        'https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=700'
+    );
+}
+
+.arena-info {
+    padding: 22px;
+}
+
+.arena-type {
+    color: #65a30d;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.arena-info h3 {
+    margin: 12px 0;
+    font-size: 19px;
+}
+
+.arena-info p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.arena-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 22px;
+}
+
+.arena-bottom h3 {
+    font-size: 20px;
+    color: #101827;
+}
+
+.arena-bottom small {
+    font-size: 12px;
+    color: #64748b;
+    font-weight: normal;
+}
+
+.arena-bottom a {
+    text-decoration: none;
+    background: #101827;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+
+/* Footer */
+footer {
+    background: #101827;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer h2 {
+    margin-bottom: 12px;
+}
+
+footer p {
+    color: #cbd5e1;
+    font-size: 14px;
+}
+
+.copyright {
+    margin-top: 20px;
+}
+
+
+/* Responsive */
+@media (max-width: 900px) {
+
+    .sports-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .arena-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .navbar {
+        padding: 0 4%;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .arena-container {
+        grid-template-columns: 1fr;
+    }
+
+    .sports,
+    .arenas {
+        padding: 50px 5%;
+    }
+
+}
+.arena-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.arena-card {
+    width: 300px;
+}
+
+.arena-info {
+    padding: 20px;
+}
+
+
+/* Registration and Login Pages */
+
+.auth-section {
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background: #f4f6f8;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 420px;
+    padding: 35px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+.auth-card h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.auth-card > p {
+    text-align: center;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.auth-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.auth-card label {
+    font-weight: 600;
+}
+
+.auth-card input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+}
+
+.auth-card input:focus {
+    border-color: #84cc16;
+}
+
+.auth-btn {
+    padding: 13px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #84cc16;
+    color: #111;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.auth-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.auth-link a {
+    color: #65a30d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.error-message {
+    color: #dc2626 !important;
+    background: #fee2e2;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.auth-card select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: white;
+    outline: none;
+}
+
+.auth-card select:focus {
+    border-color: #84cc16;
+}
+
+
+
+/* Dashboard */
+
+/* ===== Dashboard Styling ===== */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+}
+
+/* Navigation */
+
+.navbar {
+    background-color: #111827;
+    color: white;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h2 {
+    color: #ffffff;
+    margin: 0;
+    font-size: 26px;
+}
+
+.navbar div {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    color: #a3e635;
+}
+
+/* Main Dashboard */
+
+.dashboard-section {
+    padding: 40px 8%;
+}
+
+.dashboard-header {
+    margin-bottom: 30px;
+}
+
+.dashboard-header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #172554;
+}
+
+.dashboard-header p {
+    color: #64748b;
+    font-size: 16px;
+}
+
+/* Account Information */
+
+.dashboard-details {
+    background-color: #ffffff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    margin-bottom: 35px;
+}
+
+.dashboard-details h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #172554;
+}
+
+.dashboard-details p {
+    margin: 12px 0;
+    color: #475569;
+    font-size: 15px;
+}
+
+/* Quick Actions */
+
+.dashboard-heading {
+    margin-bottom: 20px;
+    color: #172554;
+}
+
+.dashboard-actions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.dashboard-card {
+    background-color: #ffffff;
+    padding: 28px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+}
+
+.dashboard-card h3 {
+    color: #172554;
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.dashboard-card p {
+    color: #64748b;
+    line-height: 1.6;
+    min-height: 45px;
+}
+
+.dashboard-card a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 11px 20px;
+    background-color: #1e293b;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.dashboard-card a:hover {
+    background-color: #65a30d;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .dashboard-actions {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar div {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .dashboard-section {
+        padding: 25px 5%;
+    }
+}
+
+/* Quick action cards */
+
+.sport-card a {
+    display: inline-block;
+    margin-top: 12px;
+    color: #65a30d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .dashboard-actions {
+        flex-direction: column;
+    }
+
+    .dashboard-actions a {
+        text-align: center;
+    }
+}
+
+.booking-history {
+    padding: 40px 8%;
+}
+
+.booking-history h1 {
+    margin-bottom: 10px;
+}
+
+.booking-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.booking-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.booking-card h2 {
+    margin-bottom: 18px;
+}
+
+.booking-card p {
+    margin: 12px 0;
+    color: #444;
+}
+
+.booking-status {
+    font-weight: bold;
+    color: #16803c;
+}
+
+.cancel-btn {
+    background: #dc2626;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+.cancel-btn:hover {
+    background: #b91c1c;
+}
+
+.cancelled-text {
+    color: #dc2626 !important;
+    font-weight: bold;
+}
+
+.empty-bookings {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f8fafc;
+    border-radius: 12px;
+    margin-top: 30px;
+}
+
+.empty-bookings a {
+    display: inline-block;
+    margin-top: 15px;
+    background: #1e293b;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.success-message {
+    color: #16803c;
+    margin-top: 20px;
+}
+
+.error-message {
+    color: #dc2626;
+    margin-top: 20px;
+}
+
+
+/* ===== Admin Dashboard ===== */
+
+.admin-section {
+    padding: 40px 8%;
+}
+
+.admin-header {
+    margin-bottom: 35px;
+}
+
+.admin-header h1 {
+    color: #172554;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.admin-header p {
+    color: #64748b;
+}
+
+.admin-section h2 {
+    color: #172554;
+    margin-bottom: 20px;
+}
+
+.admin-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.admin-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.admin-card h3 {
+    color: #64748b;
+    font-size: 17px;
+}
+
+.admin-card h1 {
+    color: #65a30d;
+    font-size: 35px;
+    margin: 15px 0;
+}
+
+.admin-card p {
+    color: #64748b;
+}
+
+.admin-management-heading {
+    margin-top: 40px;
+}
+
+.admin-management {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.admin-management-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+}
+
+.admin-management-card h3 {
+    color: #172554;
+}
+
+.admin-management-card p {
+    color: #64748b;
+    line-height: 1.6;
+}
+
+.admin-management-card span {
+    color: #65a30d;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .admin-stats,
+    .admin-management {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* ===== Admin Arena Management ===== */
+
+.admin-arena-section {
+    padding: 40px 8%;
+}
+
+.admin-arena-section > h1 {
+    color: #172554;
+    font-size: 30px;
+}
+
+.admin-arena-section > p {
+    color: #64748b;
+}
+
+.arena-form-card {
+    background: white;
+    padding: 30px;
+    margin-top: 25px;
+    max-width: 650px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.arena-form-card h2 {
+    margin-top: 0;
+    color: #172554;
+}
+
+.arena-form-card label {
+    display: block;
+    margin: 15px 0 7px;
+    font-weight: 600;
+    color: #334155;
+}
+
+.arena-form-card input,
+.arena-form-card select,
+.arena-form-card textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.arena-form-card input:focus,
+.arena-form-card select:focus,
+.arena-form-card textarea:focus {
+    outline: none;
+    border-color: #65a30d;
+}
+
+.add-arena-btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #1e293b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.add-arena-btn:hover {
+    background: #65a30d;
+}
+
+.arena-list-heading {
+    margin-top: 40px;
+    color: #172554;
+}
+
+.admin-arena-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.admin-arena-card {
+    background: white;
+    padding: 22px;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+.admin-arena-card h3 {
+    color: #172554;
+}
+
+.admin-arena-card p {
+    color: #64748b;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .admin-arena-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+.admin-management-card a {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 18px;
+    background: #1e293b;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.admin-management-card a:hover {
+    background: #65a30d;
+}
+
+/* ===== Edit and Deactivate Arena ===== */
+
+.edit-arena-details {
+    margin: 20px 0;
+}
+
+.edit-arena-details summary {
+    cursor: pointer;
+    color: #2563eb;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.edit-arena-details label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: 600;
+}
+
+.edit-arena-details input,
+.edit-arena-details textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.active-status {
+    color: #15803d;
+    font-weight: bold;
+}
+
+.inactive-status {
+    color: #dc2626;
+    font-weight: bold;
+}
+
+.deactivate-btn,
+.activate-btn {
+    width: 100%;
+    padding: 11px;
+    margin-top: 12px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.deactivate-btn {
+    background: #dc2626;
+}
+
+.deactivate-btn:hover {
+    background: #b91c1c;
+}
+
+.activate-btn {
+    background: #15803d;
+}
+
+.activate-btn:hover {
+    background: #166534;
+}
+
+/* Arena listing page */
+.arenas-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 30px;
+    box-sizing: border-box;
+}
+
+/* Page heading */
+.arenas-section h1 {
+    text-align: center;
+    margin-bottom: 35px;
+    color: #172b4d;
+}
+
+/* Arena cards layout */
+.arena-container,
+.arena-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+/* Individual arena card */
+.arena-card {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+    .arenas-section {
+        padding: 25px 15px;
+    }
+
+    .arena-container,
+    .arena-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+

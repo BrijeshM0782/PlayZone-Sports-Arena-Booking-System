@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://jakarta.ee/xml/ns/jakartaee"
+	xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+	version="5.0">
+	<display-name>Play_Arena</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index.xhtml</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+		<welcome-file>default.xhtml</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>ArenaServlet</servlet-name>
+		<servlet-class>com.playzone.controller.ArenaServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ArenaServlet</servlet-name>
+		<url-pattern>/arenas</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>RegisterServlet</servlet-name>
+		<servlet-class>com.playzone.controller.RegisterServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>RegisterServlet</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.playzone.controller.LoginServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>LogoutServlet</servlet-name>
+		<servlet-class>com.playzone.controller.LogoutServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LogoutServlet</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>BookingServlet</servlet-name>
+		<servlet-class>com.playzone.controller.BookingServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>BookingServlet</servlet-name>
+		<url-pattern>/book</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>MyBookingsServlet</servlet-name>
+		<servlet-class>com.playzone.controller.MyBookingsServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>MyBookingsServlet</servlet-name>
+		<url-pattern>/my-bookings</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CancelBookingServlet</servlet-name>
+		<servlet-class>com.playzone.controller.CancelBookingServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>CancelBookingServlet</servlet-name>
+		<url-pattern>/cancel-booking</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AdminDashboardServlet</servlet-name>
+		<servlet-class>com.playzone.controller.AdminDashboardServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AdminDashboardServlet</servlet-name>
+		<url-pattern>/admin-dashboard</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AdminArenaServlet</servlet-name>
+		<servlet-class>com.playzone.controller.AdminArenaServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AdminArenaServlet</servlet-name>
+		<url-pattern>/admin-arenas</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ArenaActionServlet</servlet-name>
+		<servlet-class>com.playzone.controller.ArenaActionServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ArenaActionServlet</servlet-name>
+		<url-pattern>/arena-action</url-pattern>
+	</servlet-mapping>
+
+
+</web-app>

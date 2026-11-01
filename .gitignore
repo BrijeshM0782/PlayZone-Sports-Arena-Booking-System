@@ -1,0 +1,21 @@
+# Java compiled files
+*.class
+bin/
+
+# Eclipse temporary files
+.metadata/
+.settings/org.eclipse.jdt.core.prefs.bak
+
+# Build output
+build/
+target/
+
+# Server files
+Servers/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
