@@ -327,7 +327,7 @@ The main objective of PlayZone is to simplify sports arena reservations through 
 
 ## 👨‍💻 Author
 
-**Your Name**
+**BRIJESH M**
 
 Java | J2EE | JSP | Servlets | JDBC | MySQL
 
