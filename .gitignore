@@ -4,7 +4,7 @@ bin/
 
 # Eclipse temporary files
 .metadata/
-.settings/org.eclipse.jdt.core.prefs.bak
+.settings/
 
 # Build output
 build/
